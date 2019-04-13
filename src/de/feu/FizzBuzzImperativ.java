@@ -3,7 +3,11 @@ package de.feu;
 public class FizzBuzzImperativ {
 
 	public static void main(String[] args) {
-		new FizzBuzzImperativ().doFizzBuzz();
+		Classroom room = new Classroom();
+
+		for (int i = 0; i < 5; i++) {
+			room.enter(new Kid(i));
+		}
 	}
 
 	void doFizzBuzz() {

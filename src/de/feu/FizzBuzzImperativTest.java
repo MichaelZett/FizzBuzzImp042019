@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FizzBuzzImperativTest {
+class FizzBuzzImperativTest {
 	private FizzBuzzImperativ testee;
 
 	@Before
