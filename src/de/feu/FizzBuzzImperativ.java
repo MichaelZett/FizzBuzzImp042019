@@ -6,7 +6,7 @@ public class FizzBuzzImperativ {
 		Classroom room = new Classroom();
 
 		for (int i = 0; i < 5; i++) {
-			room.enter(new Kid(i));
+			room.enter(new SmartKid(i));
 		}
 	}
 

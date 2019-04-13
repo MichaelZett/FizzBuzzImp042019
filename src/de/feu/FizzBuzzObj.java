@@ -6,10 +6,14 @@ public class FizzBuzzObj {
 		Classroom room = new Classroom();
 
 		for (int i = 0; i < 5; i++) {
-			room.enter(new Kid(i));
+			room.enter(createKid(i));
 		}
 
-		room.playFizzBuzz();
+		room.playFizzBuzz(100);
+	}
+
+	static Kid createKid(int i) {
+		return i % 2 == 0 ? new SmartKid(i) : new DumbKid(i);
 	}
 
 }

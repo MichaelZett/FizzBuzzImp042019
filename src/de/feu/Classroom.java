@@ -10,11 +10,12 @@ public class Classroom {
 		this.kids.add(kid);
 	}
 
-	public void playFizzBuzz() {
-		for (int i = 1; i <= 100; i++) {
-			kids.get(i % kids.size()).sayWord(i);
+	public void playFizzBuzz(int lastNumber) {
+		for (int i = 1; i <= lastNumber; i++) {
+			final Kid currentKid = kids.get(i % kids.size());
+			currentKid.sayWord(i);
 
-			if (i < 100) {
+			if (i < lastNumber) {
 				System.out.print(", ");
 			}
 		}
